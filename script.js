@@ -39,12 +39,13 @@ function timeBlocksColor() {
   }
 }
 timeBlocksColor();
-
+// --------------------------------------------------------
 $(".btn").on("click", function () {
   let text = $(this).siblings(".form-control").val();
   let time = $(this).siblings("textarea").attr("id");
   localStorage.setItem(time, text);
 });
+// ------------------------------------------------------------
 nineAm.val(localStorage.getItem("9am"));
 tenAm.val(localStorage.getItem("10am"));
 elevenAm.val(localStorage.getItem("11am"));
